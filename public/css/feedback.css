@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-control-prev,.carousel-control-next {
+    left: 0;
+    background-color: orangered;
+    padding-top:5px;
+    padding-bottom: 5px;
+     position: unset;
+     width: 45%!important;
+}
+
+.container2in
+{
+    margin: 10% 10% 10% 10%;
+}
+.carousel-item
+{
+    
+    margin-left: 15%;
+}
+
+.carousel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerCustom {
+    height: 100vh;
+}
+.Questions
+{
+    size: 10%;
+
+}
+.updown
+{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-open-survey.btn.btn-primary.tab.tab-right.survey-material-white.allow-button
+{
+    display: none!important;
+}
+
+.head1
+{
+    flex-direction: column;
+    height: 80%;
+}
+
+.innerContainer
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container1 {
+    
+    margin-bottom: 10%;
+    padding: 5rem;
+    width: 51%;
+    height: 70vh;
+    padding-top: 2%;
+
+    
+}
+
+.container2
+{
+    
+    background-color:orangered;
+    flex: 1;
+    height: 70vh;
+}
+
+.ol_1 li
+{
+    list-style: none;
+
+}
+
+.one ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one ul li
+{
+    list-style: none;
+
+}
+.order2
+{
+   border-bottom: 1px solid grey ;
+   width: 60%;
+}
+.feed
+{
+    
+    display: flex;
+    justify-content: center;
+   margin-top :0px;
+}
+.container3
+{
+    padding-top: 0%;
+    height: 15vh;
+    flex: 1;
+    background-color:black  ;
+    
+}
+ 
+.button{
+    margin-top: 1%;
+    margin-left: 25%;
+    opacity: 100%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 45%;
+  }
+.para1
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btn
+{
+         
+
+        
+        padding-top: 8vh; 
+        display: flex;
+        
+        justify-content: center;
+        align-items: center; 
+        
+}
+
+.input-group-prepend, .input-group-text {
+    width: 100%!important;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-left: -10%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container2Carousel {
+    height: 60vh;
+}

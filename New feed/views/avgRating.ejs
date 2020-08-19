@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Average Rating</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link href="./css/emojis.css" rel="stylesheet" type="text/css" />
+
+  <link type="text/css" rel="stylesheet" id="srv-css?family=Open+Sans"
+    href="https://fonts.mopinion.com/css?family=Open+Sans" />
+
+  <script src="./js/emojis.js"></script>
+
+  <style>
+    .mopinion-survey-content .rating-group .choice-row>div:first-of-type input[type="radio"]+label {
+      height: 10%;
+      width: 30%;
+    }
+    
+    .choice-row {
+      display: flex!important;
+      flex-direction: column!important;
+      justify-content: center!important;
+    }
+
+    .mopinion-survey-content .block-title {
+      text-align: center;
+    }
+
+    .mopinion-survey-content .nps-choice:last-of-type, .mopinion-survey-content .rating-choice:last-of-type {
+        /* margin-left: auto; */
+        padding-right: 0;
+        /* margin-left: auto; */
+        display: flex;
+        justify-content: center;
+    }
+
+    h5 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class=" navbar Navheader navbar-dark bg-dark py-0">
+    <a class="navbar-brand brandText" href="/">
+      <img class="brandICO" src="/images/logo/Final_Log-0.png">
+      <span> Waiting For Dinner?</span>
+    </a>
+    <span>
+      <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit" class="btnx">LOG OUT</button>
+      </form>
+    </span>
+    <span class="justify-right"><strong>Welcome NamePlaceholder</strong></span>
+  </nav>
+
+  <div class="container" style="margin-right: auto; margin-left: auto;">
+    <div class="row">
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0" style="text-align: center;">
+                              Food Quality
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgFoodQuality == 1) { %>
+                              
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55025" value="1" id="rating-55025_0"
+                                  aria-label="Hate" /><label for="rating-55025_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Dissatisfied !!
+                              </h5>
+                              <% } else if (avgFoodQuality == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55025" value="2" id="rating-55025_1"
+                                  aria-label="Dislike" /><label for="rating-55025_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Dissatisfied !!
+                              </h5>
+                              <% } else if (avgFoodQuality == 3) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55025" value="3" id="rating-55025_2"
+                                  aria-label="Neutral" /><label for="rating-55025_2" class="emoji-neutral"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              <% } else if (avgFoodQuality == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55025" value="4" id="rating-55025_3"
+                                  aria-label="Like" /><label for="rating-55025_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              <% } else if (avgFoodQuality == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55025" value="5" id="rating-55025_4"
+                                  aria-label="Love" /><label for="rating-55025_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0">
+                              Order Accuracy
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgOrderAccuracy == 1) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55026" value="1" id="rating-55026_0"
+                                  aria-label="Hate" /><label for="rating-55026_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>Extremely Dissatisfied !!</h5>
+                              <% } else if (avgOrderAccuracy == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55026" value="2" id="rating-55026_1"
+                                  aria-label="Dislike" /><label for="rating-55026_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                              Dissatisfied !!
+                              </h5>
+
+                              <% } else if (avgOrderAccuracy == 3) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55026" value="3" id="rating-55026_2"
+                                  aria-label="Neutral" /><label for="rating-55026_2" class="emoji-neutral"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              
+                              <% } else if (avgOrderAccuracy == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55026" value="4" id="rating-55026_3"
+                                  aria-label="Like" /><label for="rating-55026_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              
+                              <% } else if (avgOrderAccuracy == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55026" value="5" id="rating-55026_4"
+                                  aria-label="Love" /><label for="rating-55026_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                             
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0">
+                              Staff Service
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgStaffService == 1) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55027" value="1" id="rating-55027_0"
+                                  aria-label="Hate" /><label for="rating-55027_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Exremely Dissatisfied !!
+                              </h5>
+                              <% } else if (avgStaffService == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55027" value="2" id="rating-55027_1"
+                                  aria-label="Dislike" /><label for="rating-55027_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Dissatisfied !!
+                                </h5>
+  
+                              <% } else if (avgStaffService == 3) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55027" value="3" id="rating-55027_2"
+                                  aria-label="Neutral" /><label for="rating-55027_2" class="emoji-neutral"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              
+                              <% } else if (avgStaffService == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55027" value="4" id="rating-55027_3"
+                                  aria-label="Like" /><label for="rating-55027_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              
+                              <% } else if (avgStaffService == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55027" value="5" id="rating-55027_4"
+                                  aria-label="Love" /><label for="rating-55027_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                             
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0">
+                              Hygiene
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgHygiene == 1) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55028" value="1" id="rating-55028_0"
+                                  aria-label="Hate" /><label for="rating-55028_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>Extremely Dissatisfied !!</h5>
+                              <% } else if (avgHygiene == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55028" value="2" id="rating-55028_1"
+                                  aria-label="Dislike" /><label for="rating-55028_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Dissatisfied !!
+                                </h5>
+  
+                              <% } else if (avgHygiene == 3) { %>
+                              <div class="rating-choice">
+
+                                <!-- Correction -->
+                                <input type="radio" name="ratingGroup55028" value="3" id="rating-55028_2"
+                                  aria-label="Neutral" /><label for="rating-55028_2" class="emoji-neutral">
+                                  <!-- ================================ -->
+                                  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              
+                              <% } else if (avgHygiene == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55028" value="4" id="rating-55028_3"
+                                  aria-label="Like" /><label for="rating-55028_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              
+                              <% } else if (avgHygiene == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55028" value="5" id="rating-55028_4"
+                                  aria-label="Love" /><label for="rating-55025_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                             
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0">
+                              Food Options
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgFoodOptions == 1) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55029" value="1" id="rating-55029_0"
+                                  aria-label="Hate" /><label for="rating-55029_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>Extremely Dissatisfied !!</h5>
+                              <% } else if (avgFoodOptions == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55029" value="2" id="rating-55029_1"
+                                  aria-label="Dislike" /><label for="rating-55029_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Dissatisfied !!
+                                </h5>
+  
+                              <% } else if (avgFoodOptions == 3) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55029" value="3" id="rating-55029_2"
+                                  aria-label="Neutral" /><label for="rating-55029_2" class="emoji-neutral"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              
+                              <% } else if (avgFoodOptions == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55029" value="4" id="rating-55029_3"
+                                  aria-label="Like" /><label for="rating-55029_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              
+                              <% } else if (avgFoodOptions == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup55029" value="5" id="rating-55029_4"
+                                  aria-label="Love" /><label for="rating-55025_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                             
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-4">
+
+        <div class="column column-full" style="padding:0;">
+          <div id="surveyContent" class="preview_page ">
+            <div>
+              <div
+                data-mop-page-url="https://app.mopinion.com/survey/manage/preview/9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526">
+                <div class="" data-mop-form-type="embed">
+                  <div class="mopinion-survey-content notranslate " tabindex="-1">
+                    <div class="mopinion-survey-output survey-material-white   is-embed on-page-1 "
+                      data-key="9a4ef2f30860583c4959e8b0b4bc7e94a7e9e526" style="position: relative;">
+                      <div id="page1" style="display: block;">
+                        <div class="control-group question rating -group rating-group-1  " data-index="0"
+                          id="rating-55025" style="display: block;">
+                          <legend class="block-title" id="block-title-rating-55025">
+                            <label tabindex="0">
+                              Restaurant Environment
+                            </label>
+                          </legend>
+                          <div class="rating-group rating-group emoji emoji-group rating">
+
+                            <div class="choice-row">
+                              <% if (avgRestaurantEnvironment == 1) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup550210" value="1" id="rating-550210_0"
+                                  aria-label="Hate" /><label for="rating-550210_0" class="emoji-angry"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <linearGradient gradientUnits="userSpaceOnUse" x1="40" x2="40" y2="80">
+                                            <stop offset="0" stop-color="#FC9C76"></stop>
+                                            <stop offset=".1389" stop-color="#FDAC7A"></stop>
+                                            <stop offset=".49" stop-color="#FFEB89"></stop>
+                                            <stop offset="1" stop-color="#FFEB89"></stop>
+                                          </linearGradient>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M55.4 38.5c-.1 0-.2 0-.4-.1-.6-.2-1-.9-.8-1.5 1.2-3.7 4.2-5.5 6.6-5.9 2.2-.4 4.3.2 5.4 1.6.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-.6-.7-1.8-1-3.2-.8-1.7.3-3.9 1.6-4.7 4.3 0 .5-.5.9-1 .9z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M24.7 38.5c-.5 0-1-.3-1.1-.8-.9-2.7-3-4-4.7-4.3-1.3-.3-2.6 0-3.2.8-.4.5-1.2.6-1.7.2-.5-.4-.6-1.2-.2-1.7 1.2-1.4 3.2-2 5.4-1.6 2.4.5 5.4 2.3 6.6 5.9.2.6-.1 1.3-.8 1.5-.1-.1-.2 0-.3 0z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M33.5 57.5c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7-4.4 3.4 0 6.2 1.7 7.2 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.1-1.5-.7-.8-2.1-3.2-2.8-4.9-2.8-1.8 0-4.1.7-4.8 2.8-.2.5-.7.8-1.2.8z">
+                                        </path>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>Extremely Dissatisfied !!</h5>
+                              <% } else if (avgRestaurantEnvironment == 2) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup550210" value="2" id="rating-550210_1"
+                                  aria-label="Dislike" /><label for="rating-550210_1" class="emoji-sad"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M19.7 32.9c-2.1 0-3.9-1-4.9-2.7-.3-.6-.1-1.3.4-1.6.6-.3 1.3-.1 1.6.4.9 1.5 2.6 1.7 3.8 1.4 1.2-.3 2.7-1.2 2.9-2.9.1-.7.6-1.1 1.3-1.1.7.1 1.1.7 1.1 1.3-.2 2.5-2.1 4.5-4.8 5-.4.1-.9.2-1.4.2z">
+                                          </path>
+
+                                          <path class="eyebrows"
+                                            d="M60.4 32.9c-.5 0-1-.1-1.5-.2-2.7-.6-4.5-2.6-4.8-5-.1-.7.4-1.2 1.1-1.3.7-.1 1.2.4 1.3 1.1.2 1.7 1.7 2.7 2.9 2.9 1.2.3 2.9.1 3.8-1.4.3-.6 1.1-.8 1.6-.4.6.3.8 1.1.4 1.6-.9 1.7-2.7 2.7-4.8 2.7z">
+                                          </path>
+                                        </g>
+
+                                        <path class="mouth"
+                                          d="M34 58c-.1 0-.3 0-.4-.1-.6-.2-.9-.9-.7-1.5.9-2.7 3.7-4.4 7.1-4.4 3.4 0 6.2 1.7 7.1 4.4.2.6-.1 1.3-.7 1.5-.6.2-1.3-.3-1.5-.9-.8-2.1-3.1-3-4.9-3-1.8 0-4.1 1-4.8 3-.2.5-.7 1-1.2 1z">
+                                        </path>
+                                        <g>
+                                          <path class="eyes"
+                                            d="M62.2 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2 1 .5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                          <path class="eyes"
+                                            d="M17.9 44c-3.4 0-6.2-1.3-7.1-4-.2-.6.1-1.1.7-1.3.6-.2 1.3 0 1.5.6.8 2.1 3.1 2.7 4.9 2.7 1.8 0 4.1-.5 4.8-2.6.2-.6.9-.8 1.5-.6.6.2.9.5.7 1.2-.8 2.6-3.6 4-7 4z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Dissatisfied !!
+                                </h5>
+  
+                              <% } else if (avgRestaurantEnvironment == 3) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup550210" value="3" id="rating-550210_2"
+                                  aria-label="Neutral" /><label for="rating-550210_2" class="emoji-neutral"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="41.4" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="41.4" r="3.9"></circle>
+                                        </g>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M23.2 37h-9.6c-.7 0-1.2-.8-1.2-1.5S13 34 13.7 34h9.6c.7 0 1.2.8 1.2 1.5s-.6 1.5-1.3 1.5z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M66.3 37h-9.6c-.7 0-1.2-.8-1.2-1.5S56 34 56.7 34h9.6c.7 0 1.2.8 1.2 1.5S67 37 66.3 37z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <path class="mouth"
+                                            d="M48.4 58H31.6c-.7 0-1.2-.3-1.2-1s.5-1 1.2-1h16.8c.7 0 1.2.3 1.2 1s-.6 1-1.2 1z">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Neutral !! neither good nor bad
+                              </h5>
+                              
+                              <% } else if (avgRestaurantEnvironment == 4) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup550210" value="4" id="rating-550210_3"
+                                  aria-label="Like" /><label for="rating-550210_3" class="emoji-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <path class="mouth"
+                                          d="M39.5 66h-.2c-7.8 0-14.7-4.2-18.4-10.8-.3-.6-.1-1.4.4-1.8.6-.3 1.3-.7 1.6-.1 3.3 5.8 9.4 8.7 16.3 8.7h.1c7 0 13.2-2.9 16.6-8.8.3-.6 1.1-.5 1.6-.2.6.3.8 1.5.4 2.1C54.4 61.7 47.4 66 39.5 66z">
+                                        </path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M9.8 30c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.1.7-.6.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.1 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9-.1.6-.6.7-1.3.7z">
+                                          </path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Satisfied !!
+                              </h5>
+                              
+                              <% } else if (avgRestaurantEnvironment == 5) { %>
+                              <div class="rating-choice">
+                                <input type="radio" name="ratingGroup550210" value="5" id="rating-550210_4"
+                                  aria-label="Love" /><label for="rating-550210_4" class="emoji-extra-happy"><span><svg
+                                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      viewBox="0 0 80 80">
+                                      <g>
+                                        <g>
+                                          <circle class="head" cx="40" cy="40" r="40"></circle>
+                                        </g>
+                                        <path class="head-outline" d="M40,1.6c21,0,38,17,38,38s-17,38-38,38s-38-17-38-38S19,1.6,40,1.6 M40-0.4
+c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S62.1-0.4,40-0.4L40-0.4z"></path>
+                                        <g>
+                                          <path class="eyebrows"
+                                            d="M10.4 30s-.1 0 0 0c-.7 0-1.2-.1-1.2-.7.1-2.8 2.3-5.1 5.5-6.1s6.3-.1 8.1 2.1c.4.5.3 1.3-.2 1.7-.5.4-1.3.3-1.7-.2-1.3-1.7-3.8-1.7-5.4-1.2-1.7.5-3.7 1.5-3.8 3.7-.2.7-.7.7-1.3.7z">
+                                          </path>
+                                          <path class="eyebrows"
+                                            d="M69.6 30c-.6 0-1.2 0-1.2-.7-.1-2.2-2.1-3.4-3.8-3.9-1.7-.5-4.1-.4-5.4 1.3-.4.5-1.2.7-1.7.3-.5-.4-.6-1.1-.2-1.6 1.7-2.2 4.9-3 8.1-2 3.2 1 5.4 3 5.5 5.9 0 .6-.6.7-1.3.7.1 0 0 0 0 0z">
+                                          </path>
+                                        </g>
+                                        <g class="big-mouth-group">
+                                          <defs>
+                                            <path id="big-mouth-inner"
+                                              d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"></path>
+                                          </defs>
+                                          <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                            overflow="visible" fill="#FFA67F" class="big-mouth-bg"></path>
+                                          <clipPath>
+                                            <path d="M22.9 51h33.3c0 17-16.6 17.3-16.6 17.3S22.9 68 22.9 51z"
+                                              overflow="visible"></path>
+                                          </clipPath>
+                                          <path class="big-mouth" d="M22.9 51h33.3v3.6H23z"></path>
+                                        </g>
+                                        <g>
+                                          <circle class="eyes" cx="62.1" cy="37.8" r="3.9"></circle>
+                                          <circle class="eyes" cx="17.9" cy="37.8" r="3.9"></circle>
+                                        </g>
+                                      </g>
+                                    </svg></span></label>
+                              </div>
+                              <h5>
+                                Extremely Satisfied
+                              </h5>
+                             
+                              <% } else { %>
+                              error
+                              <% } %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6">
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <div class="col-md-6">
+        
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['foodQuality', 'orderAccuracy', 'staffService', 'hygiene', 'foodOptions', 'restaurantEnvironment'],
+        datasets: [{
+          label: '# of Votes',
+          data: [ <%= foodQuality.reduce((a, b) => a + b, 0) %>, <%= orderAccuracy.reduce((a, b) => a + b, 0) %>, 
+            <%= staffService.reduce((a, b) => a + b, 0) %>, <%= hygiene.reduce((a, b) => a + b, 0) %>, 
+            <%= foodOptions.reduce((a, b) => a + b, 0) %>, <%= restaurantEnvironment.reduce((a, b) => a + b, 0) %>],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
